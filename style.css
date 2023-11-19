@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  background: #282727;
+  color: #fff;
+}
+
+header{
+  display: flex;
+  align-items: center;
+
+  background: rgba(255, 154, 108, 0.70);
+  padding: 25px 120px;
+}
+
+nav{
+  display: flex;
+  justify-content: end;
+  gap: 64px;
+  width: 100%;
+}
+
+nav a{
+  text-decoration: none;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  justify-content: space-between;
+}
+
+#btn-hamburger-icon{
+  display: none;
+}
+
+#btn-hamburger-icon ion-icon{
+  height: 30px;
+  width: 30px;
+}
+
+/*É necessário uma @media com max-widht de 630px*/
+
+@media (max-width: 830px) {
+  nav{
+    display: none;
+  }
+
+  #btn-hamburger-icon{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+  }
+
+}
+
+@media (max-width: 470px){
+  header{
+    padding: 25px 25px;
+  }
+}
+
