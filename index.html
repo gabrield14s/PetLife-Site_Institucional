@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <script src="./script.js" defer></script>
   <link rel="stylesheet" href="./style.css">
   <title>PetLife</title>
 </head>
@@ -22,9 +23,17 @@
       <a href="#duvidas">Dúvidas</a>
     </nav>
     <div id="btn-hamburger-icon">
-      <ion-icon name="reorder-three-outline"></ion-icon>
+      <button onclick="buttonMenu()"><img src="./assets/reorder-three-outline.svg" alt="Botão de Menu"></button>
     </div>
   </header>
+
+  <div id="menu">
+      <a href="#inicio">Início</a>
+      <a href="#clinica">Clínica</a>
+      <a href="#farmacia">Farmácia</a>
+      <a href="#duvidas">Dúvidas</a>
+      
+  </div>
 
   <main>
     <section id="inicio">

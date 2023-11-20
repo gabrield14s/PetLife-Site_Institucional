@@ -6,6 +6,7 @@
 html{
   background: #282727;
   color: #fff;
+  font-family: 'Montserrat', sans-serif;
 }
 
 header{
@@ -15,6 +16,7 @@ header{
   background: rgba(255, 154, 108, 0.70);
   padding: 25px 120px;
 }
+
 
 nav{
   display: flex;
@@ -26,9 +28,29 @@ nav{
 nav a{
   text-decoration: none;
   color: #ffffff;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   justify-content: space-between;
+}
+
+#menu {
+  display: none;
+  background: red;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+}
+
+#btn-hamburger-icon button{
+  cursor: pointer;
+  border-radius: 50%;
+
+  border: 0;
+  width: 32px;
+  height: 32px;
+  color: white;
+  background-color: rgba(255, 154, 108, 0);
 }
 
 /*margem colocada apenas para visualização da lista por completa*/
@@ -43,6 +65,12 @@ ul {
 #btn-hamburger-icon ion-icon{
   height: 32px;
   width: 32px;
+}
+
+#btn-hamburger-icon button:hover{
+  transition: 0.4;
+  outline: 5px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.2);
 }
 
 @media (max-width: 830px) {
