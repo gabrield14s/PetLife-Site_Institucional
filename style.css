@@ -7,6 +7,7 @@ html{
   background: #282727;
   color: #fff;
   font-family: 'Montserrat', sans-serif;
+  touch-action: none;
 }
 
 header{
@@ -45,7 +46,6 @@ nav a{
 #btn-hamburger-icon button{
   cursor: pointer;
   border-radius: 50%;
-
   border: 0;
   width: 32px;
   height: 32px;
