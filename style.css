@@ -54,9 +54,6 @@ header nav a{
 }
 
 /*margem colocada apenas para visualização da lista por completa*/
-ul {
-  margin-left: 50px;
-}
 
 #btn-hamburger-icon{
   display: none;
@@ -73,6 +70,18 @@ ul {
   background: rgba(255, 255, 255, 0.2);
 }
 
+h1, h2{
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 32px;
+}
+
+.paragrafo{
+  font-size: 18px;
+  margin-bottom: 42px;
+  line-height: 150%;
+}
+
 /* section com id "inicio" */
 
 #inicio {
@@ -84,18 +93,6 @@ ul {
   position: relative;
 }
 
-#inicio h1{
-  font-size: 32px;
-  font-weight: 600;
-  margin-bottom: 32px;
-}
-
-#inicio p{
-  font-size: 18px;
-  margin-bottom: 42px;
-  line-height: 150%;
-}
-
 .botao-marque-consulta{
   background: #FF725E;
   border-radius: 8px;
@@ -103,6 +100,12 @@ ul {
   padding: 16px 32px;
   font-size: 16px;
   color: #fff;
+}
+
+.botao-conheca-nossa-clinica{
+  color: #FF725E;
+  margin-left: 48px;
+  text-underline-offset: 4px;
 }
 
 .img-initial-page {
@@ -114,39 +117,36 @@ ul {
   width: 100%;
 }
 
-.botao-conheca-nossa-clinica{
-  color: #FF725E;
-  margin-left: 48px;
-}
-
 /* section com id "clinica" */
 
 #clinica{
-  margin: 128px 121px;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  padding: 64px 80px;
+  gap: 64px;
 }
 
-#clinica h2{
-  font-size: 32px;
-  font-weight: 600;
-}
-
-#clinica p{
-  line-height: 150%;
-  font-size: 18px;
-  margin: 32px 0px;
-}
-
-#clinica ul{
-  line-height: 200%;
+#clinica li{
+  margin-bottom: 16px;
+  margin-left: 32px;
   font-size: 18px;
 }
 
-#clinica img{
-  margin-left: 127px;
+/* section com id "farmacia" */
+
+#farmacia{
+  padding: 64px 80px;
+  text-align: center;
 }
 
+#farmacia img{
+  margin: 64px auto;
+}
+
+#farmacia .paragrafo{
+  max-width: 950px;
+  margin: auto;
+}
 
 @media (max-width: 830px) {
   header nav{
