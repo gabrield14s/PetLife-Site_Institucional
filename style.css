@@ -1,4 +1,5 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -18,14 +19,14 @@ header{
 }
 
 
-nav{
+header nav{
   display: flex;
   justify-content: end;
   gap: 64px;
   width: 100%;
 }
 
-nav a{
+header nav a{
   text-decoration: none;
   color: #ffffff;
   font-weight: 600;
@@ -72,8 +73,83 @@ ul {
   background: rgba(255, 255, 255, 0.2);
 }
 
+/* section com id "inicio" */
+
+#inicio {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 24px 80px 158px 80px;
+
+  position: relative;
+}
+
+#inicio h1{
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 32px;
+}
+
+#inicio p{
+  font-size: 18px;
+  margin-bottom: 42px;
+  line-height: 150%;
+}
+
+.botao-marque-consulta{
+  background: #FF725E;
+  border-radius: 8px;
+  text-decoration: none;
+  padding: 16px 32px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.img-initial-page {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+
+  width: 100%;
+}
+
+.botao-conheca-nossa-clinica{
+  color: #FF725E;
+  margin-left: 48px;
+}
+
+/* section com id "clinica" */
+
+#clinica{
+  margin: 128px 121px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#clinica h2{
+  font-size: 32px;
+  font-weight: 600;
+}
+
+#clinica p{
+  line-height: 150%;
+  font-size: 18px;
+  margin: 32px 0px;
+}
+
+#clinica ul{
+  line-height: 200%;
+  font-size: 18px;
+}
+
+#clinica img{
+  margin-left: 127px;
+}
+
+
 @media (max-width: 830px) {
-  nav{
+  header nav{
     display: none;
   }
 
