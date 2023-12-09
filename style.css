@@ -188,6 +188,13 @@ h1, h2{
   opacity: 0;
 }
 
+/*classe que auxiliará na visibilidade do elemento .duvida .paragrafo*/
+.duvida.ativa .paragrafo{
+  padding: 24px;
+  height: fit-content;
+  opacity: 1;
+}
+
 footer{
   background: rgba(255, 152, 108, 0.25);
   display: flex;
