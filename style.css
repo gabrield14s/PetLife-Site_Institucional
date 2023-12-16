@@ -181,6 +181,7 @@ h1, h2{
 /* section com id "farmacia" */
 
 #farmacia{
+
   padding: 64px 80px;
   text-align: center;
 }
@@ -283,6 +284,33 @@ footer a{
 
 #copyright a{
   color: #c2cacf;
+}
+
+@media (max-width: 1240px) {
+  #inicio {
+    flex-direction: column;
+  }
+
+  #inicio .texto-section-inicio {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .img-initial-page {
+    display: none;
+  }
+
+  #duvidas , #clinica , #farmacia{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #farmacia img{
+    margin: 64px 0px;
+  }
+
 }
 
 @media (max-width: 830px) {
