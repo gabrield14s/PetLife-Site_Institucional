@@ -289,8 +289,13 @@ footer a{
 }
 
 @media (max-width: 1240px) {
-  #inicio {
+  h1, h2{
+    text-align: center;
+  }
+
+  #inicio , #clinica p{
     flex-direction: column;
+    text-align: center;
   }
 
   #inicio .texto-section-inicio {
@@ -335,6 +340,10 @@ footer a{
 }
 
 @media (max-width: 650px) {
+  #inicio , #clinica , #farmacia , #farmacia , #duvidas{
+    padding: 30px;
+  }
+
   #inicio img , #clinica img , #farmacia img , #duvidas .img-duvidas {
     width: 350px;
   }
