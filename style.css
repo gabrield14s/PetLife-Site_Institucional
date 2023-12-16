@@ -33,14 +33,60 @@ header nav a{
   justify-content: space-between;
 }
 
-#menu {
+.todo-o-menu{
+  position: relative;
+
+}
+
+.menu {
   display: none;
-  background: red;
   height: 100%;
-  width: 100%;
+  width: 50%;
+
   position: fixed;
   z-index: 1;
   top: 0;
+}
+.menu a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu .fecha-menu {
+  cursor: pointer;
+  border-radius: 30%;
+  padding: 15px;
+}
+
+.menu .fecha-menu:hover{
+  outline: 4px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.menu.ativo{
+  display: flex;
+  background: #cc4b3a;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 45px;
+  gap: 45px;
+}
+
+.parte-externa-menu{
+  display: none;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  height: 100%;
+  width: 50%;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.parte-externa-menu.ativa {
+  display: flex;
 }
 
 #btn-hamburger-icon button{

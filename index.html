@@ -28,13 +28,17 @@
   </header>
 
   <!-- barrinha de menu que aparece e desaparece [em andamento]-->
-  <div id="menu">
-    <a href="#inicio">Início</a>
-    <a href="#clinica">Clínica</a>
-    <a href="#farmacia">Farmácia</a>
-    <a href="#duvidas">Dúvidas</a>
+  <div class="todo-o-menu">
+    <div class="menu">
+      <a href="#inicio" onclick="buttonMenu()">Início</a>
+      <a href="#clinica" onclick="buttonMenu()">Clínica</a>
+      <a href="#farmacia" onclick="buttonMenu()">Farmácia</a>
+      <a href="#duvidas" onclick="buttonMenu()">Dúvidas</a>
+      <a class="fecha-menu" onclick="buttonMenu()">x</a>
+    </div>
+    <div class="parte-externa-menu" onclick="buttonMenu()"></div>
   </div>
-
+  
   <main>
     <section id="inicio">
       <img src="./assets/start-img.svg" alt="Garota brincando com o seu cachorro">

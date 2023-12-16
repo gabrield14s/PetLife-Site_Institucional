@@ -1,19 +1,15 @@
 const btnMenu = document.querySelector("#btn-hamburger-icon button");
-const menu = document.querySelector("#menu");
+const menu = document.querySelector(".menu");
+const externaMenu = document.querySelector(".parte-externa-menu");
 const duvidas = document.querySelectorAll(".duvida");
 
 function buttonMenu(){
-  if (menu.style.display == "flex" && btnMenu.style.zIndex == "2"){
-    menu.style.display = "none"
-    btnMenu.style.zIndex = "1"
-  } else {
-      menu.style.display = "flex"
-      btnMenu.style.zIndex = "2"
-  }
+  menu.classList.toggle('ativo')
+  externaMenu.classList.toggle('ativa')
 };
 
 duvidas.forEach(element => {
   element.addEventListener('click', () => {
-    element.classList.toggle('ativa');
+    element.classList.toggle('ativa')
   })
 });
